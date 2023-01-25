@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import style from './Header.module.css';
+import Navbar from '../Navbar/Navbar';
+import { navbarArray } from '../Navbar/navbar.dts';
 
 type Props = {
 	img: string;
@@ -8,10 +9,13 @@ type Props = {
 
 const Header = (props: Props) => {
 	return (
-		<div className={style.header}>
-			<div>
+		<div className={''}>
+			<Navbar navbarArray={navbarArray} />
+
+			{/* <div>
 				<Image src={props.img} alt={'img header'} height={100} width={100} />
-			</div>
+			</div> */}
+
 			<div>
 				<h3 className=''>{props.title}</h3>
 			</div>
