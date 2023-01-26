@@ -1,3 +1,4 @@
+import { CardArray } from './Card.dts';
 import CardUI from './CardUI';
 
 type Props = {};
@@ -5,7 +6,7 @@ type Props = {};
 const Card = (props: Props) => {
 	return (
 		<div>
-			<CardUI />
+			<CardUI CardArray={CardArray} />
 		</div>
 	);
 };
