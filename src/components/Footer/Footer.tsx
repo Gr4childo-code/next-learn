@@ -6,7 +6,7 @@ const Footer = (props: Props) => {
 	let year = new Date().getFullYear();
 
 	return (
-		<div>
+		<div className='container'>
 			<p> @copyright все права защищены {year} год.</p>
 		</div>
 	);

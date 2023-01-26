@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Navbar from '../Navbar/Navbar';
-import { navbarArray } from '../Navbar/navbar.dts';
 
 type Props = {
 	img: string;
@@ -9,16 +8,16 @@ type Props = {
 
 const Header = (props: Props) => {
 	return (
-		<div className={''}>
-			<Navbar navbarArray={navbarArray} />
-
-			{/* <div>
+		<div className='container'>
+			<Navbar />
+			{/* 
+			<div>
 				<Image src={props.img} alt={'img header'} height={100} width={100} />
-			</div> */}
+			</div>
 
 			<div>
-				<h3 className=''>{props.title}</h3>
-			</div>
+				<h6 className=''>{props.title}</h6>
+			</div> */}
 		</div>
 	);
 };
