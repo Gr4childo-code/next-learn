@@ -1,0 +1,7 @@
+:root {
+	scroll-behavior: smooth;
+}
+
+.this:hover::before {
+	content: '\f586';
+}

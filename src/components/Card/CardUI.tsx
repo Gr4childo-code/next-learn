@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { TCardArray } from './Card.dts';
 
 type Props = {
@@ -14,9 +15,9 @@ const CardUI = (props: Props) => {
 					<div className='card-body'>
 						<h5 className='card-title'>{i.title}</h5>
 						<p className='card-text'>{i.text}</p>
-						<a href='#' className='btn btn-primary'>
+						<Link href='/' className='btn btn-primary'>
 							Переход куда-нибудь
-						</a>
+						</Link>
 					</div>
 				</div>
 			))}
