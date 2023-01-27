@@ -19,7 +19,8 @@ const NavbarUI = (props: Props) => {
 							<li key={index} className='nav-item '>
 								<Link
 									className={router.pathname === i.link ? 'nav-link active' : 'nav-link'}
-									href={i.link}>
+									href={i.link}
+								>
 									{i.title}
 								</Link>
 							</li>
