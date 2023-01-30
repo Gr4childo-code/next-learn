@@ -13,12 +13,13 @@ const RatingUI = (props: Props) => {
 		for (let index = 0; index < props.countStar; index++) {
 			allStar.push(<i key={Math.random()} className='bi bi-star-fill'></i>);
 		}
+		console.log(allStar);
 
 		for (let index = 0; index < PropsMaxStar; index++) {
 			allStar.push(
 				<i
 					key={Math.random()}
-					className='bi bi-star this'
+					className='bi bi-star'
 					onClick={() => {
 						console.log(index);
 					}}

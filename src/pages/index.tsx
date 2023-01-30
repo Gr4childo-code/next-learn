@@ -8,7 +8,7 @@ const index = (props: Props) => {
 	return (
 		<div className='container'>
 			<div>
-				<Rating maxStar={4} countStar={0} />
+				<Rating maxStar={5} countStar={4} />
 			</div>
 
 			<div className='py-5'>
